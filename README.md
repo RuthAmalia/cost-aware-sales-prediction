@@ -17,14 +17,13 @@ supply-chain dataset. It separates algorithm capability from evaluation design b
 
 - Python 3.x <!-- TODO: exact version -->
 - `numpy`, `pandas`, `scipy`, `scikit-learn`, `lightgbm`, `catboost`, `optuna`, `matplotlib`
-  (exact versions in `requirements.txt`; the script installs `lightgbm`, `catboost` and `optuna` automatically if missing)
 - Reported experiments were run on Google Colab (8 vCPUs, AMD EPYC 7B12, 51 GB RAM).
 
 ### Data
 
 Download the DataCo Smart Supply Chain dataset from Kaggle:
 <https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supplychain-for-big-data-analysis>
-(file `DataCoSupplyChainDataset.csv`, 180,519 order lines, 53 attributes). Check the dataset licence before redistributing it.
+(file `DataCoSupplyChainDataset.csv`, 180,519 order lines, 53 attributes).
 
 ### Run
 
@@ -34,7 +33,6 @@ Paths are read from environment variables:
 ```bash
 export DATACO_CSV=/path/to/DataCoSupplyChainDataset.csv
 export RESULTS_DIR=results/run_T_temporal
-python src/gwo_optuna_v5.py
 ```
 
 Recommended order, as noted in the script docstring: `MODE='smoke'` (sanity check), then `'quick'`, then `'full'`.
