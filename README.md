@@ -53,9 +53,6 @@ Other settings shared by all runs: `TARGET='Sales_per_customer'`, `C_OVER=0.10`,
 
 For Table VII (learning-rate sweep) set `RUN_LR_SWEEP=True`; it uses one seed and the `leak` level (`SWEEP_LEVELS`).
 
-> The defaults in the script (`MODE='quick'`, `MAIN_LEVEL='clean'`, `RUN_LR_SWEEP=False`) differ from the reported runs.
-> Change them as in the table above before reproducing the paper.
-
 ## Pipeline
 
 1. **Data preparation.** Text and personal fields are dropped; calendar features (month, day, weekday, hour) are derived from the order
