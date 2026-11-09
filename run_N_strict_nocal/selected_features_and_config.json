@@ -1,0 +1,57 @@
+{
+  "config": {
+    "MODE": "quick",
+    "MAIN_LEVEL": "strict_nocal",
+    "C_OVER": 0.1,
+    "C_UNDER": 0.2,
+    "TAU": 0.6666666666666666,
+    "SPLIT_MODE": "grouped_random",
+    "TARGET": "Sales_per_customer",
+    "BUDGET_S": null,
+    "CONF_ALPHA": 0.1,
+    "split_dates": [
+      "acak",
+      "acak",
+      "acak"
+    ],
+    "rows": null,
+    "seeds": [
+      0
+    ],
+    "n_trials": 15,
+    "wolves": 6,
+    "iters": 5,
+    "gwo_tr": 20000,
+    "gwo_va": 10000,
+    "cat_tune_n": 40000,
+    "boot": 1000
+  },
+  "selected": {
+    "ridge_seed0": [
+      "Type",
+      "Longitude",
+      "Order_Country",
+      "Order_Item_Discount_Rate",
+      "Order_Item_Quantity"
+    ],
+    "lgbm_seed0": [
+      "Type",
+      "Longitude",
+      "Market",
+      "Order_Country",
+      "Order_Item_Discount_Rate",
+      "Order_Item_Quantity",
+      "Order_Region",
+      "Shipping_Mode"
+    ],
+    "cat_seed0": [
+      "Customer_City",
+      "Customer_Country",
+      "Longitude",
+      "Order_City",
+      "Order_Item_Discount_Rate",
+      "Order_Item_Quantity",
+      "Order_Region"
+    ]
+  }
+}

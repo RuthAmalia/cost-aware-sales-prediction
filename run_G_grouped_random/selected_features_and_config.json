@@ -1,0 +1,120 @@
+{
+  "config": {
+    "MODE": "full",
+    "MAIN_LEVEL": "strict",
+    "C_OVER": 0.1,
+    "C_UNDER": 0.2,
+    "TAU": 0.6666666666666666,
+    "SPLIT_MODE": "grouped_random",
+    "TARGET": "Sales_per_customer",
+    "BUDGET_S": null,
+    "CONF_ALPHA": 0.1,
+    "split_dates": [
+      "acak",
+      "acak",
+      "acak"
+    ],
+    "rows": null,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "n_trials": 40,
+    "wolves": 10,
+    "iters": 8,
+    "gwo_tr": 30000,
+    "gwo_va": 15000,
+    "cat_tune_n": 60000,
+    "boot": 2000
+  },
+  "selected": {
+    "ridge_seed0": [
+      "Longitude",
+      "Order_Item_Discount_Rate",
+      "Order_Item_Quantity",
+      "Shipping_Mode",
+      "order_hour"
+    ],
+    "ridge_seed1": [
+      "Days_for_shipment_scheduled",
+      "Customer_State",
+      "Longitude",
+      "Order_Item_Discount_Rate",
+      "Order_Item_Quantity",
+      "Shipping_Mode"
+    ],
+    "ridge_seed2": [
+      "Customer_City",
+      "Latitude",
+      "Market",
+      "Order_Item_Discount_Rate",
+      "Order_Item_Quantity",
+      "Shipping_Mode",
+      "order_month",
+      "order_hour"
+    ],
+    "lgbm_seed0": [
+      "Customer_Segment",
+      "Market",
+      "Order_Item_Discount_Rate",
+      "Order_Item_Quantity",
+      "Order_Region",
+      "order_month",
+      "order_day",
+      "order_weekday"
+    ],
+    "lgbm_seed1": [
+      "Days_for_shipment_scheduled",
+      "Order_Item_Quantity",
+      "Order_Region",
+      "Shipping_Mode",
+      "order_month",
+      "order_day"
+    ],
+    "lgbm_seed2": [
+      "Days_for_shipment_scheduled",
+      "Customer_City",
+      "Customer_Country",
+      "Customer_State",
+      "Market",
+      "Order_Country",
+      "Order_Item_Discount_Rate",
+      "Order_Item_Quantity",
+      "order_month",
+      "order_day",
+      "order_weekday"
+    ],
+    "cat_seed0": [
+      "Customer_City",
+      "Customer_State",
+      "Latitude",
+      "Longitude",
+      "Market",
+      "Order_City",
+      "Order_Item_Discount_Rate",
+      "Order_Item_Quantity",
+      "Shipping_Mode",
+      "order_month",
+      "order_day"
+    ],
+    "cat_seed1": [
+      "Days_for_shipment_scheduled",
+      "Customer_State",
+      "Longitude",
+      "Order_Item_Discount_Rate",
+      "Order_Item_Quantity",
+      "order_month"
+    ],
+    "cat_seed2": [
+      "Days_for_shipment_scheduled",
+      "Longitude",
+      "Order_Country",
+      "Order_Item_Discount_Rate",
+      "Order_Item_Quantity",
+      "Shipping_Mode",
+      "order_month",
+      "order_day"
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "config": {
+    "MODE": "full",
+    "MAIN_LEVEL": "strict",
+    "C_OVER": 0.1,
+    "C_UNDER": 0.2,
+    "TAU": 0.6666666666666666,
+    "SPLIT_MODE": "temporal",
+    "TARGET": "Sales_per_customer",
+    "BUDGET_S": null,
+    "CONF_ALPHA": 0.1,
+    "split_dates": [
+      "2016-11-16",
+      "2017-03-01",
+      "2017-06-14"
+    ],
+    "rows": null,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "n_trials": 40,
+    "wolves": 10,
+    "iters": 8,
+    "gwo_tr": 30000,
+    "gwo_va": 15000,
+    "cat_tune_n": 60000,
+    "boot": 2000
+  },
+  "selected": {
+    "ridge_seed0": [
+      "Days_for_shipment_scheduled",
+      "Customer_Country",
+      "Longitude",
+      "Order_Item_Discount_Rate",
+      "Order_Item_Quantity"
+    ],
+    "ridge_seed1": [
+      "Type",
+      "Customer_City",
+      "Market",
+      "Order_Item_Discount_Rate",
+      "Order_Item_Quantity",
+      "order_month",
+      "order_weekday"
+    ],
+    "ridge_seed2": [
+      "Days_for_shipment_scheduled",
+      "Order_Item_Discount_Rate",
+      "Order_Item_Quantity",
+      "order_hour"
+    ],
+    "lgbm_seed0": [
+      "Customer_State",
+      "Market",
+      "Order_Item_Discount_Rate",
+      "Order_Item_Quantity",
+      "Shipping_Mode",
+      "order_weekday"
+    ],
+    "lgbm_seed1": [
+      "Customer_City",
+      "Customer_State",
+      "Order_Item_Discount_Rate",
+      "Order_Item_Quantity",
+      "Order_State",
+      "order_month",
+      "order_weekday"
+    ],
+    "lgbm_seed2": [
+      "Type",
+      "Order_City",
+      "Order_Item_Discount_Rate",
+      "Order_Item_Quantity",
+      "order_month",
+      "order_hour"
+    ],
+    "cat_seed0": [
+      "Days_for_shipment_scheduled",
+      "Customer_Country",
+      "Order_Item_Discount_Rate",
+      "Order_Item_Quantity",
+      "Order_Region",
+      "Shipping_Mode"
+    ],
+    "cat_seed1": [
+      "Customer_City",
+      "Latitude",
+      "Order_Item_Discount_Rate",
+      "Order_Item_Quantity",
+      "order_month"
+    ],
+    "cat_seed2": [
+      "Customer_City",
+      "Latitude",
+      "Order_Country",
+      "Order_Item_Discount_Rate",
+      "Order_Item_Quantity"
+    ]
+  }
+}
