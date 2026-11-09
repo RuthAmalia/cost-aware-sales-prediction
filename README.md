@@ -10,6 +10,7 @@ supply-chain dataset. It separates algorithm capability from evaluation design b
 4. building Cost-Asymmetric Split Conformal (CASC) prediction intervals and checking their coverage month by month.
 
 5. The dataset is **not** included (see [Data](#data)).
+6. link video: https://www.loom.com/share/9af3df7812f54b56a9c1805e79c9294e
 
 ## Quick start
 
